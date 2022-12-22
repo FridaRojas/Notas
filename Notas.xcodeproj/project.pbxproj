@@ -13,6 +13,7 @@
 		2D86BC492954DAE900D3FF36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D86BC482954DAE900D3FF36 /* Preview Assets.xcassets */; };
 		2D86BC4B2954DAE900D3FF36 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC4A2954DAE900D3FF36 /* Persistence.swift */; };
 		2D86BC4E2954DAE900D3FF36 /* Notas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC4C2954DAE900D3FF36 /* Notas.xcdatamodeld */; };
+		2D86BC572954E09F00D3FF36 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC562954E09F00D3FF36 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2D86BC482954DAE900D3FF36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D86BC4A2954DAE900D3FF36 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2D86BC4D2954DAE900D3FF36 /* Notas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notas.xcdatamodel; sourceTree = "<group>"; };
+		2D86BC562954E09F00D3FF36 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 		2D86BC402954DAE600D3FF36 /* Notas */ = {
 			isa = PBXGroup;
 			children = (
+				2D86BC552954E06700D3FF36 /* View */,
+				2D86BC542954E04C00D3FF36 /* ViewModel */,
 				2D86BC412954DAE600D3FF36 /* NotasApp.swift */,
 				2D86BC432954DAE600D3FF36 /* ContentView.swift */,
 				2D86BC452954DAE900D3FF36 /* Assets.xcassets */,
@@ -71,6 +75,21 @@
 				2D86BC482954DAE900D3FF36 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D86BC542954E04C00D3FF36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D86BC562954E09F00D3FF36 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2D86BC552954E06700D3FF36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D86BC572954E09F00D3FF36 /* ViewModel.swift in Sources */,
 				2D86BC4B2954DAE900D3FF36 /* Persistence.swift in Sources */,
 				2D86BC442954DAE600D3FF36 /* ContentView.swift in Sources */,
 				2D86BC422954DAE600D3FF36 /* NotasApp.swift in Sources */,
