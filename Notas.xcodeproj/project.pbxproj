@@ -14,6 +14,8 @@
 		2D86BC4B2954DAE900D3FF36 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC4A2954DAE900D3FF36 /* Persistence.swift */; };
 		2D86BC4E2954DAE900D3FF36 /* Notas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC4C2954DAE900D3FF36 /* Notas.xcdatamodeld */; };
 		2D86BC572954E09F00D3FF36 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC562954E09F00D3FF36 /* ViewModel.swift */; };
+		2D86BC592954E46000D3FF36 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC582954E46000D3FF36 /* Home.swift */; };
+		2D86BC5B2954E50800D3FF36 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86BC5A2954E50800D3FF36 /* AddNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2D86BC4A2954DAE900D3FF36 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2D86BC4D2954DAE900D3FF36 /* Notas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notas.xcdatamodel; sourceTree = "<group>"; };
 		2D86BC562954E09F00D3FF36 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2D86BC582954E46000D3FF36 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2D86BC5A2954E50800D3FF36 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		2D86BC552954E06700D3FF36 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D86BC582954E46000D3FF36 /* Home.swift */,
+				2D86BC5A2954E50800D3FF36 /* AddNote.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,10 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D86BC5B2954E50800D3FF36 /* AddNote.swift in Sources */,
 				2D86BC572954E09F00D3FF36 /* ViewModel.swift in Sources */,
 				2D86BC4B2954DAE900D3FF36 /* Persistence.swift in Sources */,
 				2D86BC442954DAE600D3FF36 /* ContentView.swift in Sources */,
 				2D86BC422954DAE600D3FF36 /* NotasApp.swift in Sources */,
+				2D86BC592954E46000D3FF36 /* Home.swift in Sources */,
 				2D86BC4E2954DAE900D3FF36 /* Notas.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
