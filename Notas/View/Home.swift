@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
     
     @StateObject var model = ViewModel()
+    @Environment(\.managedObjectContext) var context
     //Obtiene los resultados de la entidad Notas ordenados por fecha ascendente y los guarda en results
     @FetchRequest(entity: Notas.entity(), sortDescriptors: [NSSortDescriptor(key: "fecha", ascending: true)],animation: .spring()) var results : FetchedResults<Notas>
     
@@ -23,7 +24,20 @@ struct Home: View {
                             .font(.title)
                             .bold()
                         Text(item.fecha ?? Date(), style: .date)
-                    }
+                    }.contextMenu(ContextMenu(menuItems: {
+                        // ELIMINA
+                        Button(action:{
+                            model.delete(item: item, context: context)
+                        }){
+                            Label(title: {Text("Eliminar")}, icon: {Image(systemName: "trash")})
+                        }
+                        //EDITA
+                        Button(action:{
+                            model.sendData(item: item)
+                        }){
+                            Label(title: {Text("Editar")}, icon: {Image(systemName: "pencil")})
+                        }
+                    }))
                 }
             }.navigationBarTitle("Notas")
                 .navigationBarItems(trailing:

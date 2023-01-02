@@ -14,22 +14,25 @@ struct AddNote: View {
     
     var body: some View {
         VStack{
-            Text("Agregar nota").font(.title).bold()
+            Text(model.update != nil ? "Editar nota" : "Agregar Nota").font(.title).bold()
             Spacer()
             TextEditor(text: $model.nota).padding()
             Divider()
             DatePicker("Seleccione fecha", selection: $model.fecha)
             Spacer()
             Button(action:{
-                model.save(context: context)
+                if model.update != nil{
+                    model.editData(context: context)
+                }else{
+                    model.save(context: context)
+                }
+                
             }){
-                Label(
-                    title:{Text("Guardar").foregroundColor(Color.white).bold()},
-                    icon: {Image(systemName: "dock.arrow.down.rectangle").foregroundColor(Color.white)}
-                )
+                Text("Guardar").foregroundColor(.white).bold()
             }.padding()
-                .background(Color.blue)
+                .background(model.nota == "" ? Color.gray : Color.blue)
                 .cornerRadius(8)
+                .disabled(model.nota == "" ? true : false)
             
         }.padding()
     }
